@@ -4,13 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>dom Forms</title>
+    <script src="https://kit.fontawesome.com/3bcf514641.js" crossorigin="anonymous"></script>
+    <title>dom Forms-facbook-ui</title>
 </head>
 <body>
-    <h1>helooo</h1>
-    
-
-
+    <div class="Signup-wrapper" id="SignupWrapper">
+        <div class="main-header" id="mainHeader"> 
+            <div>
+                <div class="main-text">Sign Up</div>
+                <div class="sub-text">It's quick and Easy.</div>
+            </div>
+            <div>
+                <div class="logo">
+                    <img src="x.svg" >
+                </div>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <div class= "input-row">
+                <input class="name-input" placeholder =" First Name" type="text">
+                <input class="name-input" placeholder=" Surename" type="text">
+            </div>
+            <div class="input-row-2">
+                <input class="number-input" type="text" placeholder=" Mobile number or email address">
+                <input class="password-input" type="password" placeholder=" New password">
+            </div>
+            <div class="date-wrapper">
+                <label for="text" class="date-text" >Date of birth</label>
+                <i class="fa-sharp fa-regular fa-2xs  fa-circle-question"></i>  
+                <div class="date-select">
+                    <select name="date" id="date" class="birth-input">
+                        <option value="date">date</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                    </select>
+                    <select name="month" id="month" class="birth-input">
+                        <option value="month">Month</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="march">march</option>
+                        <option value=" April"> April</option>
+                        <option value="May">May</option>
+                    </select>
+                    <select name="year" id="year" class="birth-input">
+                        <option value="year">year</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value=" 2023"> 2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>  
+               
+            </div>
+            
+            <p class="genter-title">Gender</p>
+            <div class="gender-options">
+                <div class="gender-option">
+                    <label for="female">female</label>
+                    <input type="radio" name="gender" id="female"> 
+                </div>
+                <div class="gender-option">
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="male"> 
+                </div>
+                <div class="gender-option">
+                    <label for="custom">custom</label>
+                    <input type="radio" name="gender" id="custom"> 
+                </div>
+            </div>
+            <div class="para-wrapper">
+                    <p class="text-wrapper">
+                        People who use our service may have upload your contact information to
+                        Facebook. <a href="#" class="learn-more">Learn more</a>
+                    </p>
+                    <p class="text-wrapper-2">
+                        By clicking Sign Up, you agree to our <a href="#" class="learn-more">Terms,privacy Policy</a> and <a href="#" class="learn-more">Cookies Policy</a> You may recive SMS notifications from  us and opt out at any time.
+                    </p>
+            </div>
+            <div class="Signup-button">
+                <button class="button">Sign Up</button>
+            </div>
+            
+        </div>
+    </div>
+     
     <script src="script.js"></script>
 </body>
 </html>
