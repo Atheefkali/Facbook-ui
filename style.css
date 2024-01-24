@@ -1,5 +1,11 @@
+
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);   
+    background-image:url(aesthetic\ phone\ wallpaper.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
 }
 input{
     border: 1px solid #d1d5da;
@@ -50,28 +56,48 @@ input:focus-visible{
 }
 .input-row{
     display: flex;
-    gap:3px 5px;
-    height: 25px;
+    gap:3px 20px;
+    height: 22px;
     padding: 5px;
     
 }
 .name-input{
-    width: 50%;    
+    width: 100%;    
+    display: flex;
+
 }
 .input-row-2{
     margin-left: 5px;
     gap:5px;
+  
+    margin-top: 1px;
 }
 .number-input{
     width: 94%;
     gap: 2px;
-    margin-top: 5px ;
+    margin-top: 13px ;
     
+}
+.err-msg{
+    color: black;
+    font-size: 8px;
+    margin-top: 2.5px;
+    margin-left: 2px;
+    color: red;
+    display: none;
+
+}
+.enter-err{
+    color: black;
+    font-size: 8px;
+    margin-top: 2.5px;
+    margin-left: 2px;
+    color: red;
+    display: none; 
 }
 .password-input{
     width: 94%;
-    margin-top: 8px;
-   
+    margin-top: 10px;  
 }
 
 .text{
@@ -80,12 +106,16 @@ input:focus-visible{
     margin-top: 5px;
     margin-left: 6px;
 }
+.date-wrapper{
+    margin-top: -8px;
+}
 
 .date-text{
-    color: #a299a1;
+    font-size: 12px;
     font-family: sans-serif;
-    margin-left: 5px;
-    font-size: 11px;
+    color: #a299a1;
+    margin-top: 12px;
+    margin-left: 6px;
 }
 .fa-circle-question{
     font-size:9px;
@@ -95,7 +125,7 @@ input:focus-visible{
 }
 .date-select{
     display: flex;
-    margin-top: 2px;
+    margin-top: -8px;
     
 }
 select{
@@ -127,6 +157,7 @@ select{
     margin-top: -8px;
     
     
+    
 }
 
 .gender-option{
@@ -134,20 +165,19 @@ select{
     align-items: center;
     border: 1px solid #a299a1;
     font-size:12px;
-    height: 19px;
+    height: 17px;
     padding:2px;
     border-radius: 3px;
     font-family: sans-serif;
     color: #a299a1;
-    width: 90px;
+    width: 80px;
     margin-left: 6px;
     
 
 }
 input[type ="radio"]{
     margin-top: -1px;
-    margin-left: 20
-    +3px;
+    margin-left: 20px;
 
 }
 #male{
@@ -158,13 +188,13 @@ input[type ="radio"]{
 #female{
     display: flex;
     justify-content: space-between;
-    margin-left: 29px;
+    margin-left: 20px;
  }
  #custom{
     font-size: 20px;
     display: inline-flex;
     justify-content: space-between;
-    margin-left: 8px;
+    margin-left: 16px;
  }
 .text-wrapper{
     font-size: 10px;
@@ -184,7 +214,7 @@ input[type ="radio"]{
 }
 .Signup-button{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     
 }
 .button{
@@ -197,6 +227,8 @@ input[type ="radio"]{
     font-weight: bold;
     color: white;
     cursor: pointer;
+    margin-left: -18px;
+
 }
 .button:hover{
       background: linear-gradient(#67ae55, #578843);

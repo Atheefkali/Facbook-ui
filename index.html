@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="facebook.svg">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3bcf514641.js" crossorigin="anonymous"></script>
+    
     <title>dom Forms-facbook-ui</title>
 </head>
 <body>
@@ -21,17 +22,26 @@
             </div>
         </div>
         <div class="form-wrapper">
-            <div class= "input-row">
-                <input class="name-input" placeholder =" First Name" type="text">
-                <input class="name-input" placeholder=" Surename" type="text">
+            <div class= "input-row" >
+                <div>
+                    <input class="name-input"  id="FirstName" placeholder =" First Name" type="text" required>
+                     <div class="err-msg" id="FirstNameError">this field is required!</div>
+                </div>
+                <div>
+                     <input class="name-input" id="Surename" placeholder=" Surename" type="text" required>
+                     <div class="err-msg" id="SurenameError">this field is required!</div>
+               </div>
             </div>
             <div class="input-row-2">
-                <input class="number-input" type="text" placeholder=" Mobile number or email address">
-                <input class="password-input" type="password" placeholder=" New password">
+                <input class="number-input" id="emailMoboleInput" type="text" placeholder=" Mobile number or email address" required>
+                <div class="err-msg" id="errmsg">this field is required!</div>
+                <div class="enter-err" id="enterError"> plz enter mobile or email number</div>
+                <input class="password-input" id="password" type="password" placeholder=" New password" required>
+                <div class="err-msg" id="errmsg">this field is required!</div>
+               
             </div>
             <div class="date-wrapper">
-                <label for="text" class="date-text" >Date of birth</label>
-                <i class="fa-sharp fa-regular fa-2xs  fa-circle-question"></i>  
+                <p class="date-text">Date of birth</p> 
                 <div class="date-select">
                     <select name="date" id="date" class="birth-input">
                         <option value="date">date</option>
@@ -69,11 +79,13 @@
                 </div>
                 <div class="gender-option">
                     <label for="male">male</label>
-                    <input type="radio" name="gender" id="male"> 
+                    <input type="radio" class="male" name="gender" id="male"> 
                 </div>
                 <div class="gender-option">
+                    
                     <label for="custom">custom</label>
                     <input type="radio" name="gender" id="custom"> 
+                 
                 </div>
             </div>
             <div class="para-wrapper">
@@ -86,7 +98,7 @@
                     </p>
             </div>
             <div class="Signup-button">
-                <button class="button">Sign Up</button>
+                <button type="submit" id="Signbutt" class="button" >Sign Up</button>
             </div>
             
         </div>
